@@ -68,9 +68,12 @@ export default function Kits() {
                 </div>
               </Link>
               <ul>
-                {category.map((element) => {
+                {category.map((element, index) => {
                   return (
-                    <li className="font-bold text-sm text-muted-foreground px-2">
+                    <li
+                      key={index}
+                      className="font-bold text-sm text-muted-foreground px-2"
+                    >
                       <Link to={"/"}>{element}</Link>
                     </li>
                   );

@@ -43,7 +43,7 @@ export default function CreateYourOwn() {
                       <ToggleGroupItem
                         key={i}
                         value={element}
-                        className="border-muted-foreground rounded-full py-1 px-2 h-auto w-auto"
+                        className="border-muted-foreground rounded-full py-1 px-4 h-auto w-auto"
                       >
                         {element}
                       </ToggleGroupItem>
@@ -63,7 +63,7 @@ export default function CreateYourOwn() {
                 >
                   <ToggleGroupItem
                     value="none"
-                    className="border-muted-foreground rounded-full py-1 px-2 h-auto w-auto"
+                    className="border-muted-foreground rounded-full py-1 px-4 h-auto w-auto"
                   >
                     Aucun
                   </ToggleGroupItem>
@@ -81,7 +81,7 @@ export default function CreateYourOwn() {
                 >
                   <ToggleGroupItem
                     value="none"
-                    className="border-muted-foreground rounded-full py-1 px-2 h-auto w-auto"
+                    className="border-muted-foreground rounded-full py-1 px-4 h-auto w-auto"
                   >
                     Aucun
                   </ToggleGroupItem>
@@ -91,8 +91,9 @@ export default function CreateYourOwn() {
             <div className="w-full">
               <Button
                 variant={"primary"}
-                onClick={() => addProductCart(datas[0], datas[0].id)}
-                className="w-full py-3 px-6"
+                size={"xl"}
+                onClick={() => addProductCart(datas[0])}
+                className="w-full py-3 px-6 rounded-xl"
               >
                 Ajouter au panier
               </Button>

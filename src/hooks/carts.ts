@@ -5,15 +5,16 @@ import { useContext } from "react";
 export function useCarts() {
   const { productsCarts, setProductsCarts } = useContext(CartsContext);
 
-  const addProductCart = (product: productType, id: number) => {
+  const addProductCart = (product: productType) => {
     const newItem = { ...product, amount: 1 };
 
     const cartItem = productsCarts.find((item) => {
-      return item.id === id;
+      return item.id === product.id;
     });
     if (cartItem) {
       const newCart = [...productsCarts].map((item) => {
-        if (item.id === id) return { ...item, amount: cartItem.amount + 1 };
+        if (item.id === product.id)
+          return { ...item, amount: cartItem.amount + 1 };
         else return item;
       });
       setProductsCarts(newCart);

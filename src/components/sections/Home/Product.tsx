@@ -2,9 +2,10 @@ import { Button } from "@/components/ui/button";
 import { useCarts } from "@/hooks/carts";
 import { productType } from "@/types/products";
 import { ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Product({ product }: { product: productType }) {
-  const { title, price, size, image } = product;
+  const { title, price, size, image, id } = product;
   const { addProductCart } = useCarts();
 
   return (
@@ -12,7 +13,7 @@ export default function Product({ product }: { product: productType }) {
       <div className="relative overflow-hidden">
         <Button
           variant={"ghost"}
-          onClick={() => addProductCart(product, product.id)}
+          onClick={() => addProductCart(product)}
           className="absolute top-1 group-hover:right-1 -right-16 transition-all duration-300 z-30"
         >
           <ShoppingCart />{" "}
@@ -40,12 +41,12 @@ export default function Product({ product }: { product: productType }) {
         </div>
       </div>
       <div className="flex flex-wrap justify-start h-[50px] w-[90%]">
-        <a
+        <Link
           className="mx-3 inline-flex items-center text-start font-bold text-muted-forground line-clamp-2 group-hover:underline leading-6 tracking-tighter sm:text-lg"
-          href=""
+          to={`/product/${id}`}
         >
           {title}
-        </a>
+        </Link>
       </div>
       <div className="mx-3 items-center h-[65px] border-t text-muted-forground font-bold w-[90%] inline-flex pt-3 ">
         <span>€ {price.toFixed(2)}</span>
