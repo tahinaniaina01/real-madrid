@@ -1,0 +1,234 @@
+[
+  {
+    "id": 1,
+    "type": "Home Kit 24/25",
+    "title": "Mens Home Authentic Shirt 24/25 White",
+    "price": 150,
+    "image": "/src/assets/RMCFMZ0196_01-1.webp",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 2,
+    "type": "Home Kit 24/25",
+    "title": "Mens Home Shirt 24/25 White",
+    "price": 100,
+    "image": "/src/assets/RMCFMZ0195-01-1.webp",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 3,
+    "type": "Home Kit 24/25",
+    "title": "Mens Home Long Sleeve Shirt 24/25 White",
+    "price": 110,
+    "image": "/src/assets/RMCFMZ0193_01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 4,
+    "type": "Home Kit 24/25",
+    "title": "Mens Home Authentic 24/25 White",
+    "price": 150,
+    "image": "/src/assets/RMCFLZ0049_01-1.webp",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 5,
+    "type": "Home Kit 24/25",
+    "title": "Womens Home Shirt 24/25 White",
+    "price": 100,
+    "image": "/src/assets/RMCFLZ0048_01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 6,
+    "type": "Home Kit 24/25",
+    "title": "Youth Home Kit 24/25 White",
+    "price": 110,
+    "image": "/src/assets/RMCFIO0020_0.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 7,
+    "type": "Home Kit 24/25",
+    "title": "Youth Home Shirt 24/25 White",
+    "price": 75,
+    "image": "/src/assets/RMCFYZ0062_01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 8,
+    "type": "Home Kit 24/25",
+    "title": "Youth Home Long Sleeve Shirt 24/25 White",
+    "price": 80,
+    "image": "/src/assets/RMCFYZ0061_01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 9,
+    "type": "Home Kit 24/25",
+    "title": "Youth Home Long Sleeve Shirt 24/25 White",
+    "price": 80,
+    "image": "/src/assets/RMCFYZ0061_01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 10,
+    "type": "Home Kit 24/25",
+    "title": "Infant Home Kit 24/25 White",
+    "price": 70,
+    "image": "/src/assets/RMCFIO0020_0.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 11,
+    "type": "Home Kit 24/25",
+    "title": "Baby Home Kit 24/25 White",
+    "price": 60,
+    "image": "/src/assets/RMCFIO0019_013.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 12,
+    "type": "Home Kit 24/25",
+    "title": "Mens Home Authentic Short 24/25 White",
+    "price": 55,
+    "image": "/src/assets/RMCFMP0202_01.webp",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 13,
+    "type": "DNA",
+    "title": "Mens adidas DNA Sweatshirt 24/25 White",
+    "price": 65,
+    "image": "/src/assets/RMCFMS0315-01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 14,
+    "type": "DNA",
+    "title": "Mens adidas DNA Track Top 24/25 White",
+    "price": 75,
+    "image": "/src/assets/RMCFMS0316-01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 15,
+    "type": "DNA",
+    "title": "Pantalon Hommes adidas DNA 24/25 Bleu",
+    "price": 65,
+    "image": "/src/assets/RMCFMP0209-01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 16,
+    "type": "DNA",
+    "title": "Polo Hommes adidas DNA 24/25 Blanc",
+    "price": 50,
+    "image": "/src/assets/RMCFMG0097-01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 17,
+    "type": "DNA",
+    "title": "T-shirt adidas DNA 24/25 Hommes Blanc",
+    "price": 33,
+    "image": "/src/assets/RMCFMT0295-01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 18,
+    "type": "DNA",
+    "title": "Short Hommes adidas DNA 24/25 Bleu",
+    "price": 45,
+    "image": "/src/assets/RMCFMP0210-01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 19,
+    "type": "DNA",
+    "title": "Mens adidas DNA Big Creast T-shirt 24/25",
+    "price": 33,
+    "image": "/src/assets/RMCFMT0294-01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 20,
+    "type": "UCL",
+    "title": "adidas Mens Champions 15 T-Shirt White",
+    "price": 33,
+    "image": "/src/assets/RMCFMT0347-01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 21,
+    "type": "UCL",
+    "title": "adidas Youth Champions 15 T-Shirt White",
+    "price": 35,
+    "image": "/src/assets/RMCFYT0139-01.jpeg",
+    "size": ["128", "140", "152", "164"]
+  },
+  {
+    "id": 22,
+    "type": "UCL",
+    "title": "Mens UCL Champions 15 Hoodie White",
+    "price": 65,
+    "image": "/src/assets/RMCFMS0363-01.jpeg",
+    "size": ["2XL", "3XL"]
+  },
+  {
+    "id": 23,
+    "type": "UCL",
+    "title": "Youth UCL Champions 15 T-shirt Navy",
+    "price": 30,
+    "image": "/src/assets/RMCFYT0140-01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 24,
+    "type": "UCL",
+    "title": "Mens UCL Champions 15 Polo Navy",
+    "price": 55,
+    "image": "/src/assets/RMCFMG0102-01.jpeg",
+    "size": ["XS", "S", "M", "2XL", "3XL"]
+  },
+  {
+    "id": 25,
+    "type": "UCL",
+    "title": "Mens UCL Champions 15 T-shirt Black",
+    "price": 35,
+    "image": "/src/assets/RMCFMT0350-01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 26,
+    "type": "UCL",
+    "title": "adidas Champions 15 Cap White",
+    "price": 30,
+    "image": "/src/assets/RMCFMH0113-01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  },
+  {
+    "id": 27,
+    "type": "UCL",
+    "title": "UCL Champions Of Europe Scarf Sliver",
+    "price": 20,
+    "image": "/src/assets/RMCFMK0087-01.jpeg",
+    "size": ["OSFA"]
+  },
+  {
+    "id": 28,
+    "type": "UCL",
+    "title": "UCL Champions 15 Scarf Navy/Orange",
+    "price": 25,
+    "image": "/src/assets/RMCFMK0085-01.jpeg",
+    "size": ["OSFA"]
+  },
+  {
+    "id": 29,
+    "type": "UCL",
+    "title": "adidas Mens A Por La 15 T-Shirt White",
+    "price": 35,
+    "image": "/src/assets/RMCFMT0313-01.jpeg",
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+  }
+]
