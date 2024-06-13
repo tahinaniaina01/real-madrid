@@ -16,14 +16,15 @@ export default function Login() {
       <div className="container flex justify-center">
         <div className="w-full max-w-[400px] h-full flex flex-col gap-10">
           <h2 className="text-center lg:text-4xl text-2xl font-bold">
-            Welcom !
+            Bienvenu !
           </h2>
           <p className="text-center text-lg lg:text-xl text-muted-foground">
-            Sign in or create your account
+            Authentifier ou créé un compte
           </p>
           <div className="relative w-full flex flex-1 md:grow-0">
             <Input
-              type="search"
+              type="email"
+              placeholder="votre emeil"
               className="input-focus bg-muted border-none h-[56px] lg:h-[48px] text-inherit pr-16 pl-3 py-2 appearance-none w-full transition duration-150 ease-in-out focus:outline-none font-bold placeholder:font-normal focus:border-deep-purple-700 focus:ring-deep-purple-700 focus:ring-2 rounded-xl"
             />
             <span className="x flex-1 items-center justify-center w-full h-full cursor-pointer hidden">
@@ -31,11 +32,11 @@ export default function Login() {
             </span>
           </div>
           <Button variant={"primary"} className="text-lg" size={"lg"}>
-            Continue
+            Continuer
           </Button>
           <div className="flex w-full justify-between items-center">
             <span className="w-2/5 h-[2px] bg-muted-foreground rounded-full"></span>
-            OR
+            OU
             <span className="w-2/5 h-[2px] bg-muted-foreground rounded-full"></span>
           </div>
           <Button
@@ -43,23 +44,23 @@ export default function Login() {
             className="text-lg hover:bg-muted-foreground/30 bg-background"
             size={"lg"}
           >
-            Continue with Google
+            Continuer avec Google
           </Button>
           <Button
             variant={"secondary"}
             className="text-lg hover:bg-muted-foreground/30 bg-background"
             size={"lg"}
           >
-            Continue with Apple ID
+            Continuer avec Apple ID
           </Button>
           <hr />
           <p className="text-center">
-            We will use your email address to check if you already have an
-            account. You can exercise your rights at{" "}
+            Nous utiliserons votre adresse e-mail pour vérifier si vous avez
+            déjà un compte. Vous pouvez exercer vos droits à{" "}
             <a href="https://oposicion@corp.realmadrid.com">
               oposicion@corp.realmadrid.com
             </a>{" "}
-            and get more information here.{" "}
+            et obtenir plus d’informations ici.
           </p>
         </div>
       </div>

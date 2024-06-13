@@ -47,7 +47,7 @@ export default function Kits() {
   ];
 
   return (
-    <div className="absolute top-full w-[100vw] left-0 hidden group-hover:block px-16 py-8 bg-background">
+    <div className="absolute top-full w-[100vw] left-0 hidden group-hover:block px-16 py-8 bg-background shadow-xl">
       <div className="grid grid-cols-7 gap-5">
         {categorys.map((element, index) => {
           const { image, title, category } = element;

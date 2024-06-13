@@ -72,7 +72,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    /* color: hsl(220, 64%, 16%); */
+    /* color: #8760f6; */
   }
   .input-focus:focus ~ .x {
     @apply flex;

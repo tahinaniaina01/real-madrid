@@ -109,42 +109,42 @@ export default function Header() {
         <div className="hidden lg:flex items-center justify-center">
           <nav className="flex gap-3">
             <div className="group">
-              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground">
+              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground">
                 Tenus{" "}
                 <ChevronDown className="group-hover:rotate-180 transition duration-300" />
               </div>
               <Kits />
             </div>
             <div className="group">
-              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 hover:before:opacity-100 font-bold text-sm text-muted-foreground">
+              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground">
                 Acheter par joueur{" "}
                 <ChevronDown className="group-hover:rotate-180 transition duration-300" />
               </div>
               <ShopByPlayer />
             </div>
             <div className="group">
-              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 hover:before:opacity-100 font-bold text-sm text-muted-foreground">
+              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground">
                 Entrainement{" "}
                 <ChevronDown className="group-hover:rotate-180 transition duration-300" />
               </div>
               <Training />
             </div>
             <div className="group">
-              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 hover:before:opacity-100 font-bold text-sm text-muted-foreground">
+              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground">
                 Mode{" "}
                 <ChevronDown className="group-hover:rotate-180 transition duration-300" />
               </div>
               <Fashion />
             </div>
             <div className="group">
-              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 hover:before:opacity-100 font-bold text-sm text-muted-foreground">
+              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground">
                 Accessoires{" "}
                 <ChevronDown className="group-hover:rotate-180 transition duration-300" />
               </div>
               <Accessoires />
             </div>
             <div className="">
-              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 hover:before:opacity-100 font-bold text-sm text-muted-foreground">
+              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 hover:before:opacity-100 font-bold text-sm text-muted-foreground">
                 Champions league{" "}
                 <ChevronDown className="group-hover:rotate-180 transition duration-300 opacity-0 w-0" />
               </div>

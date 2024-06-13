@@ -5,7 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import datas from "@/data/playersWomens.json";
+import datas from "@/data/players.json";
 import { playerType } from "@/types/players";
 import Player from "./Player";
 

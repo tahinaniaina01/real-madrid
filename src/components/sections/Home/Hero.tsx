@@ -18,10 +18,16 @@ export default function Hero() {
             alt="Mobile Hero Header Image"
           />
         </div>
-        <div className="absolute m-5 lg:ml-12 bg-muted rounded-2xl w-full max-w-[400px] p-6 flex flex-col gap-7 items-start text-[#000c]">
+        <div className="absolute m-5 lg:ml-12 bg-muted/70 rounded-2xl w-full max-w-[400px] p-6 flex flex-col gap-7 items-start text-[#000c]">
           <h1 className="text-3xl md:text-7xl font-bold">Nouveau kit 24/25</h1>
           <p>¡Hala Madrid y nada más!</p>
-          <Button variant={"primary"}>Acheter</Button>
+          <Button
+            variant={"primary"}
+            size={"lg"}
+            className="rounded-xl font-normal text-xl"
+          >
+            Acheter
+          </Button>
         </div>
       </div>
     </section>

@@ -1,85 +1,115 @@
-import img1 from "@/assets/HOME__4_.webp";
-import img2 from "@/assets/nav-menu-320x320-away.webp";
-import img7 from "@/assets/nav-menu-320x320-basket.webp";
-import img4 from "@/assets/nav-menu-320x320-gk__1_.webp";
-import img6 from "@/assets/nav-menu-320x320-kroos.webp";
-import img5 from "@/assets/nav-menu-320x320-shop_by_player.webp";
-import img3 from "@/assets/nav-menu-320x320-third.webp";
+import img from "@/assets/nav-menu-992x664-kidsontour.webp";
+import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 export default function Fashion() {
-  const categorys = [
-    {
-      title: "Tenue domicile 24/25",
-      category: ["Hommes", "Femmes", "Enfants", "Voir tout"],
-      image: img1,
-    },
-    {
-      title: "Tenue extérieur 23/24",
-      category: ["Hommes", "Femmes", "Enfants", "Voir tout"],
-      image: img2,
-    },
-    {
-      title: "Tenue third 23/24",
-      category: ["Hommes", "Femmes", "Enfants", "Voir tout"],
-      image: img3,
-    },
-    {
-      title: "Tenue gardien de but 24/25",
-      category: ["Hommes", "Enfants"],
-      image: img4,
-    },
-    {
-      title: "Acheter par joueur",
-      category: ["Équipe Masculin", "Équipe Feminin"],
-      image: img5,
-    },
-    {
-      title: "Toni Kroos",
-      category: ["Maillots 24/25"],
-      image: img6,
-    },
-    {
-      title: "Tenues basketball",
-      category: ["Hommes", "Enfants", "Voir tout"],
-      image: img7,
-    },
-  ];
+  const categories = {
+    mens: [
+      "Survêtements",
+      "Sweats",
+      "Vestes",
+      "T-shirts",
+      "Pantalons",
+      "Tout voir",
+    ],
+    womens: [
+      "Survêtements",
+      "Sweats",
+      "Vestes",
+      "T-shirts",
+      "Pantalons",
+      "Tout voir",
+    ],
+    kids: [
+      "Survêtements",
+      "Sweats",
+      "Vestes",
+      "T-shirts",
+      "Pantalons",
+      "Tout voir",
+    ],
+    Collections: ["Entraînement", "Warm Up", "DNA", "Real Urban", "Tout voir"],
+  };
 
   return (
-    <div className="absolute top-full w-[100vw] left-0 hidden group-hover:block px-16 py-8 bg-background">
-      <div className="grid grid-cols-7 gap-5">
-        {categorys.map((element, index) => {
-          const { image, title, category } = element;
-
-          return (
-            <div key={index} className="space-y-3">
+    <div className="absolute top-full w-[100vw] left-0 hidden group-hover:block px-16 py-8 bg-background shadow-xl">
+      <div className="flex gap-5">
+        <div className="w-[35%] flex gap-5">
+          <div className="w-1/2">
+            <div className="grid border-b-2 border-gray-200 dark:border-gray-700 pb-2 mb-2 mx-4">
               <Link
                 to={"/"}
-                className="text-start font-bold justify-between cursor-pointer xl:text-lg text-base"
+                className="text-left cursor-pointer normal-case w-full h-full rounded-sm xl:text-lg text-base font-bold"
               >
-                <img
-                  className="w-full rounded-xl overflow-hidden h-auto"
-                  src={image}
-                  alt=""
-                />
-                <div className="grid max-w-full border-b-2  pt-4 pb-2">
-                  {title}
-                </div>
+                Équipe masculine
               </Link>
-              <ul>
-                {category.map((element) => {
-                  return (
-                    <li className="font-bold text-sm text-muted-foreground px-2">
-                      <Link to={"/"}>{element}</Link>
-                    </li>
-                  );
-                })}
-              </ul>
             </div>
-          );
-        })}
+            <Categories categories={categories.mens} />
+          </div>
+          <div className="w-1/2">
+            <div className="grid border-b-2 border-gray-200 dark:border-gray-700 pb-2 mb-2 mx-4">
+              <Link
+                to={"/"}
+                className="text-left cursor-pointer normal-case w-full h-full rounded-sm xl:text-lg text-base font-bold"
+              >
+                Équipe feminine
+              </Link>
+            </div>
+            <Categories categories={categories.womens} />
+          </div>
+        </div>
+        <div className="w-[35%] flex gap-5">
+          <div className="w-1/2">
+            <div className="grid border-b-2 border-gray-200 dark:border-gray-700 pb-2 mb-2 mx-4">
+              <Link
+                to={"/"}
+                className="text-left cursor-pointer normal-case w-full h-full rounded-sm xl:text-lg text-base font-bold"
+              >
+                Enfants
+              </Link>
+            </div>
+            <Categories categories={categories.kids} />
+          </div>
+          <div className="w-1/2">
+            <div className="grid border-b-2 border-gray-200 dark:border-gray-700 pb-2 mb-2 mx-4">
+              <Link
+                to={"/"}
+                className="text-left cursor-pointer normal-case w-full h-full rounded-sm xl:text-lg text-base font-bold"
+              >
+                Collections
+              </Link>
+            </div>
+            <Categories categories={categories.Collections} />
+          </div>
+        </div>
+        <div className="w-[30%] relative flex items-center">
+          <img className="w-full rounded-xl" src={img} alt="kroos" />
+          <div className="absolute bg-card/50 w-auto sm:px-0 sm:pb-0 ml-8 max-w-[70%] shadow-lg rounded-xl md:p-6 p-4 grid justify-items-start items-center md:items-start text-start">
+            <h1 className="text-2xl md:text-4xl mb-7 font-bold text-card-foreground">
+              Enfants
+            </h1>
+            <Button variant={"primary"} size={"lg"}>
+              Acheter
+            </Button>
+          </div>
+        </div>
       </div>
+    </div>
+  );
+}
+
+function Categories({ categories }: { categories: string[] }) {
+  return (
+    <div className="w-full flex flex-col items-start">
+      {categories.map((category, i) => (
+        <Link
+          key={i}
+          to={"/"}
+          className="transition-all hover:bg-[#8760f6]/20 hover:text-[#8760f6] border-none rounded-sm font-semibold text-start normal-case text-sm xl:text-base text-gray-400 dark:text-gray-600 px-4 py-2"
+        >
+          {category}
+        </Link>
+      ))}
     </div>
   );
 }

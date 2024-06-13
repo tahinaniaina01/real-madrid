@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "gender": "men",
+    "number": 5,
+    "name": "Bellingham",
+    "imageDesktop": "/players/bellingham_-_desktop.jpeg",
+    "imageMobile": "/players/bellingham-mobile.jpeg"
+  },
+  {
+    "id": 2,
+    "gender": "men",
+    "number": 7,
+    "name": "Vini Jr.",
+    "imageDesktop": "/players/vini_jr_-_desktop.webp",
+    "imageMobile": "/players/vini-mobile.jpeg"
+  },
+  {
+    "id": 3,
+    "gender": "men",
+    "number": 10,
+    "name": "Modrić",
+    "imageDesktop": "/players/modric_-_desktop.jpeg",
+    "imageMobile": "/players/modric-mobile.webp"
+  },
+  {
+    "id": 4,
+    "gender": "men",
+    "number": 15,
+    "name": "Valverde",
+    "imageDesktop": "/players/valverde_-_desktop.webp",
+    "imageMobile": "/players/valverde-mobile.jpeg"
+  },
+  {
+    "id": 5,
+    "gender": "men",
+    "number": 24,
+    "name": "Arda Güler",
+    "imageDesktop": "/players/arda_-_desktop.webp",
+    "imageMobile": "/players/arda-guler-mobile.jpeg"
+  },
+  {
+    "id": 6,
+    "gender": "men",
+    "number": 11,
+    "name": "Rodrygo",
+    "imageDesktop": "/players/rodrygo-_desktop.jpeg",
+    "imageMobile": "/players/rodrygo-mobile.jpeg"
+  },
+  {
+    "id": 7,
+    "gender": "women",
+    "number": 7,
+    "name": "Olga",
+    "imageDesktop": "/players/olga-desktop.jpeg",
+    "imageMobile": "/players/olga-mobile.jpeg"
+  },
+  {
+    "id": 8,
+    "gender": "women",
+    "number": 22,
+    "name": "Athenea",
+    "imageDesktop": "/players/athenea-desktop.jpeg",
+    "imageMobile": "/players/athenea-mobile.jpeg"
+  },
+  {
+    "id": 9,
+    "gender": "women",
+    "number": 18,
+    "name": "Linda C.",
+    "imageDesktop": "/players/linda-c-desktop.jpeg",
+    "imageMobile": "/players/linda-c-mobile.jpeg"
+  },
+  {
+    "id": 10,
+    "gender": "women",
+    "number": 1,
+    "name": "Misa",
+    "imageDesktop": "/players/misa-desktop.jpeg",
+    "imageMobile": "/players/misa-mobile.jpeg"
+  },
+  {
+    "id": 11,
+    "gender": "women",
+    "number": 15,
+    "name": "Raso",
+    "imageDesktop": "/players/raso-desktop.jpeg",
+    "imageMobile": "/players/raso-mobile.jpeg"
+  }
+]
