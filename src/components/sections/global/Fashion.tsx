@@ -88,8 +88,8 @@ export default function Fashion() {
             <h1 className="text-2xl md:text-4xl mb-7 font-bold text-card-foreground">
               Enfants
             </h1>
-            <Button variant={"primary"} size={"lg"}>
-              Acheter
+            <Button variant={"primary"} size={"lg"} asChild>
+              <Link to={"/products/fashion"}>Acheter</Link>
             </Button>
           </div>
         </div>

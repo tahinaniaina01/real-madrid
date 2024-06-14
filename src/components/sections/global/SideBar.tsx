@@ -18,6 +18,10 @@ export function SideBar() {
     (acc, curr) => acc + curr.price * curr.amount,
     0
   );
+  const nbItems = productsCarts.reduce(
+    (total, product) => total + product.amount,
+    0
+  );
 
   // console.log(carts);
 
@@ -30,8 +34,8 @@ export function SideBar() {
           className="relative border-none"
         >
           {productsCarts.length > 0 && (
-            <span className="absolute top-0 right-0 w-4 h-4 rounded-full flex items-center text-primary-foreground text-sm justify-center bg-red-500">
-              {productsCarts.length}
+            <span className="absolute -top-1 -right-1 w-5 h-5 rounded-full flex items-center text-primary-foreground text-sm justify-center bg-red-500">
+              {nbItems}
             </span>
           )}
           <ShoppingCart className="text-muted-foreground" />

@@ -3,6 +3,10 @@ import Item from "./Item";
 
 export default function Cart() {
   const { productsCarts } = useCarts();
+  const total = productsCarts.reduce(
+    (total, product) => product.amount * product.price + total,
+    0
+  );
 
   return (
     <div className="lg:fixed flex flex-col lg:w-[37%] justify-between relative max-h-[calc(80svh-4rem)] lg:h-[calc(100vh-4rem)] lg:max-h-[calc(100vh-4rem)]">
@@ -26,7 +30,7 @@ export default function Cart() {
               Subtotal
             </span>
             <span className="text-base font-normal leading-tighter tracking-tight text-foreground">
-              € 100
+              € {total.toFixed(2)}
             </span>
           </div>
           <div className="w-full flex items-center justify-between">
@@ -42,7 +46,7 @@ export default function Cart() {
               Total
             </span>
             <span className="leading-tighter tracking-tight text-foreground font-bold text-2xl xl:text-4xl">
-              € 100
+              € {total.toFixed(2)}
             </span>
           </div>
         </div>

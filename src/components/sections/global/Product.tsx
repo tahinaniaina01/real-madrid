@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { useCarts } from "@/hooks/carts";
 import { productType } from "@/types/products";
 import { ShoppingCart } from "lucide-react";
@@ -18,27 +19,33 @@ export default function Product({ product }: { product: productType }) {
         >
           <ShoppingCart />{" "}
         </Button>
-        <div className="">
+        <Link to={`/product/${id}`} className="">
           <img
             className="group-hover:scale-75 transition-all duration-300 min-h-[200px]"
             src={image}
             alt="product items"
           />
-        </div>
-        <div className="flex items-center justify-center w-full absolute transition-all duration-300 bottom-0 translate-y-12 group-hover:translate-y-0">
+        </Link>
+        <ToggleGroup
+          type="single"
+          defaultValue={size[0]}
+          variant="outline"
+          className="flex items-center justify-center w-full absolute transition-all gap-0 duration-300 bottom-0 translate-y-12 group-hover:translate-y-0"
+        >
           {size.map((element: string, i: number) => {
             return (
-              <Button
+              <ToggleGroupItem
                 variant={"outline"}
                 key={i}
-                size={"icon"}
+                size={"sm"}
+                value={element}
                 className="shadow-full-sm rounded-full h-auto text-xs px-2 py-1 mb-0.5 w-fit cursor-default border-gray-150"
               >
                 {element}
-              </Button>
+              </ToggleGroupItem>
             );
           })}
-        </div>
+        </ToggleGroup>
       </div>
       <div className="flex flex-wrap justify-start h-[50px] w-[90%]">
         <Link
