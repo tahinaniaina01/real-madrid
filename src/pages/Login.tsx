@@ -1,3 +1,4 @@
+import logo from "@/assets/logo.webp";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { X } from "lucide-react";
@@ -9,7 +10,7 @@ export default function Login() {
       <header className="fixed w-[100vw] top-0 left-0">
         <div className="container flex justify-center py-5">
           <Link to="/" className="text-xl">
-            logo
+            <img src={logo} className="w-12 h-12 rounded-full" alt="" />
           </Link>
         </div>
       </header>
