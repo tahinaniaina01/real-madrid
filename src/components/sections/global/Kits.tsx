@@ -13,36 +13,43 @@ export default function Kits() {
       title: "Tenue domicile 24/25",
       category: ["Hommes", "Femmes", "Enfants", "Voir tout"],
       image: img1,
+      link: "/products/home-kit-24-25",
     },
     {
       title: "Tenue extérieur 23/24",
       category: ["Hommes", "Femmes", "Enfants", "Voir tout"],
       image: img2,
+      link: "/products/home-kit-24-25",
     },
     {
       title: "Tenue third 23/24",
       category: ["Hommes", "Femmes", "Enfants", "Voir tout"],
       image: img3,
+      link: "/products/home-kit-24-25",
     },
     {
       title: "Tenue gardien de but 24/25",
       category: ["Hommes", "Enfants"],
       image: img4,
+      link: "/products/home-kit-24-25",
     },
     {
       title: "Acheter par joueur",
       category: ["Équipe Masculin", "Équipe Feminin"],
       image: img5,
+      link: "/products/home-kit-24-25",
     },
     {
       title: "Toni Kroos",
       category: ["Maillots 24/25"],
+      link: "/products/home-kit-24-25",
       image: img6,
     },
     {
       title: "Tenues basketball",
       category: ["Hommes", "Enfants", "Voir tout"],
       image: img7,
+      link: "/products/home-kit-24-25",
     },
   ];
 
@@ -50,12 +57,12 @@ export default function Kits() {
     <div className="absolute top-full w-[100vw] left-0 hidden group-hover:block px-16 py-8 bg-background shadow-xl">
       <div className="grid grid-cols-7 gap-5">
         {categorys.map((element, index) => {
-          const { image, title, category } = element;
+          const { image, title, category, link } = element;
 
           return (
             <div key={index} className="space-y-3">
               <Link
-                to={"/"}
+                to={link}
                 className="text-start font-bold justify-between cursor-pointer xl:text-lg text-base"
               >
                 <img
@@ -74,7 +81,7 @@ export default function Kits() {
                       key={index}
                       className="font-bold text-sm text-muted-foreground px-2"
                     >
-                      <Link to={"/"}>{element}</Link>
+                      <Link to={link}>{element}</Link>
                     </li>
                   );
                 })}

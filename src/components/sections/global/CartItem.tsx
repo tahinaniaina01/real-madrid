@@ -37,7 +37,7 @@ export default function CartItem({ item }: { item: cartType }) {
               <Button
                 variant={"outline"}
                 size={"icon"}
-                onClick={() => decrementAmount(item.id)}
+                onClick={() => decrementAmount(id)}
                 className="border-none rounded-full"
               >
                 -
@@ -46,20 +46,20 @@ export default function CartItem({ item }: { item: cartType }) {
                 type="text"
                 className="w-12 px-1 text-center outline-none border-none bg-transparent"
                 value={amount}
-                onChange={(e) => setAmount(item.id, e.target?.value)}
+                onChange={(e) => setAmount(id, e.target?.value)}
               />
               <Button
                 variant={"outline"}
                 size={"icon"}
                 className="border-none rounded-full"
-                onClick={() => incrementAmount(item.id)}
+                onClick={() => incrementAmount(id)}
               >
                 +
               </Button>
             </div>
             <Button
               variant={"primary"}
-              onClick={() => deleteOneProductCart(item.id)}
+              onClick={() => deleteOneProductCart(id)}
             >
               Delete
             </Button>

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "params": "home-kit-24-25",
+    "type": "Home Kit 24/25",
+    "imageBackground": "/background/background-home-1.webp",
+    "imageForground": "/background/GENERICO.webp",
+    "title": "Maillot Real Madrid 24/25",
+    "description": "Admirez à la fois l’héritage durable et la nouvelle ère du Real Madrid C.F. avec une nouvelle tenue domicile pour la saison 24/25. Son nouveau design épuré et minimaliste est un renvoi vers les origines du club, mettant en valeur son blanc emblématique."
+  },
+  {
+    "id": 2,
+    "params": "training-24-25",
+    "type": "Training 24/25",
+    "imageBackground": "/background/BACKGROUND-TRAINING.jpeg",
+    "imageForground": "/background/training-GENERICO-OVER.jpeg",
+    "title": "Entraînement Real Madrid",
+    "description": "Achetez sur la boutique en ligne officielle du Real Madrid. Trouvez la collection de vêtements et d'accessoires d'entraînement tels que des maillots, des vestes, des gants, des protège-tibias, des ballons et bien plus encore."
+  },
+  {
+    "id": 3,
+    "params": "goalkeeper-kit-24-25",
+    "type": "Goal Keeper Kit 24/25",
+    "imageBackground": "none",
+    "imageForground": "none",
+    "title": "Maillot Gardien Real Madrid",
+    "description": "Nous présentons les maillots et tenues officiels de gardien de but portés par les joueurs du Real Madrid au Santiago Bernabéu et autour du monde. Personnalisez votre maillot homme avec votre nom ou celui de votre joueur préféré !"
+  },
+  {
+    "id": 4,
+    "params": "fashion",
+    "type": "Fashion",
+    "imageBackground": "/background/FashionBg.jpeg",
+    "imageForground": "/background/FashionFg.jpeg",
+    "title": "Mode Real Madrid",
+    "description": "Mode de Real Madrid: élégance et passion dans chaque vêtement."
+  },
+  {
+    "id": 5,
+    "params": "accessoires",
+    "type": "Accessoires",
+    "imageBackground": "/background/background-home-1.webp",
+    "imageForground": "/background/accesories-over.jpeg",
+    "title": "Accessoires",
+    "description": "Achetez sur la Boutique en Ligne Officielle UE du Real Madrid. Dans la collection d'accessoires pour les supporters, vous trouverez des sacs, des lunettes, des épingles et bien d'autres choses encore."
+  },
+  {
+    "id": 6,
+    "params": "champions-league",
+    "type": "UCL",
+    "imageBackground": "/background/bg-desktop-41.jpeg",
+    "imageForground": "/background/desktop-8.webp",
+    "title": "Vainqueurs de la Ligue des Champions",
+    "description": "Célébrez le succès sans pareil du Real Madrid qui remporte sa 15e Ligue des Champions de l'UEFA ! Nous sommes fiers de dévoiler une collection exclusive qui rend hommage à la remarquable réussite du club et à son histoire dans la plus grande compétition de football d'Europe. Rejoignez-nous pour commémorer cette étape historique"
+  }
+]

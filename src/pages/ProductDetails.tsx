@@ -19,6 +19,7 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import products from "@/data/products.json";
 import { useCarts } from "@/hooks/carts";
 import { Link, useParams } from "react-router-dom";
+import NotFound from "./NotFound";
 
 export default function ProductDetails() {
   const { productId } = useParams();
@@ -26,7 +27,7 @@ export default function ProductDetails() {
   const product = products.find(
     (prod) => prod.id == parseInt(productId || "999999999999999")
   );
-  if (!product) return <div>404</div>;
+  if (!product) return <NotFound />;
   const { title, price, size, image } = product;
 
   console.log(product);
@@ -45,7 +46,9 @@ export default function ProductDetails() {
                 <BreadcrumbList>
                   <BreadcrumbItem>
                     <BreadcrumbLink>
-                      <Link to="/">Accueil</Link>
+                      <Link to="/" className="text-ring">
+                        Accueil
+                      </Link>
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator />

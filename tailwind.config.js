@@ -57,6 +57,8 @@ module.exports = {
           "linear-gradient(180deg, #8760f6 0%, #3e31fa 100%)",
         "gradient-top":
           "linear-gradient(rgb(42, 57, 90) 0%, rgb(23, 23, 23) 100%)",
+        "gradient-muted":
+          "linear-gradient(rgb(230, 221, 255) 0%, rgb(251, 253, 255) 100%);",
       },
       borderRadius: {
         lg: "var(--radius)",

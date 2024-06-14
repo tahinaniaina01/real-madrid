@@ -1,6 +1,7 @@
 import imgDesktop from "@/assets/hero_banner_desktop_1__1_.webp";
 import imgMobile from "@/assets/hero_banner_mobile__2_.webp";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -25,8 +26,9 @@ export default function Hero() {
             variant={"primary"}
             size={"lg"}
             className="rounded-xl font-normal text-xl"
+            asChild
           >
-            Acheter
+            <Link to={"/products/home-kit-24-25"}>Acheter</Link>
           </Button>
         </div>
       </div>

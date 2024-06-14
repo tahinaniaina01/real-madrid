@@ -3,7 +3,7 @@ import Menu from "@/components/ui/Menu";
 import { Input } from "@/components/ui/input";
 import { ArrowRight, ChevronDown, Search, UserRound, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Accessoires from "./Accessoires";
 import Fashion from "./Fashion";
 import Kits from "./Kits";
@@ -109,45 +109,63 @@ export default function Header() {
         <div className="hidden lg:flex items-center justify-center">
           <nav className="flex gap-3">
             <div className="group">
-              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground">
+              <NavLink
+                to={"/products/home-kit-24-25"}
+                className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground"
+              >
                 Tenus{" "}
                 <ChevronDown className="group-hover:rotate-180 transition duration-300" />
-              </div>
+              </NavLink>
               <Kits />
             </div>
             <div className="group">
-              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground">
+              <NavLink
+                to={"/shopByPlayer"}
+                className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground"
+              >
                 Acheter par joueur{" "}
                 <ChevronDown className="group-hover:rotate-180 transition duration-300" />
-              </div>
+              </NavLink>
               <ShopByPlayer />
             </div>
             <div className="group">
-              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground">
+              <NavLink
+                to={"/products/training-24-25"}
+                className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground"
+              >
                 Entrainement{" "}
                 <ChevronDown className="group-hover:rotate-180 transition duration-300" />
-              </div>
+              </NavLink>
               <Training />
             </div>
             <div className="group">
-              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground">
+              <NavLink
+                to={"/products/fashion"}
+                className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground"
+              >
                 Mode{" "}
                 <ChevronDown className="group-hover:rotate-180 transition duration-300" />
-              </div>
+              </NavLink>
               <Fashion />
             </div>
             <div className="group">
-              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground">
+              <NavLink
+                to={"/products/accessoires"}
+                className="px-5 py-4 cursor-pointer relative flex items-center gap-1 hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 group-hover:before:opacity-100 font-bold text-sm text-muted-foreground"
+              >
                 Accessoires{" "}
                 <ChevronDown className="group-hover:rotate-180 transition duration-300" />
-              </div>
+              </NavLink>
               <Accessoires />
             </div>
             <div className="">
-              <div className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 hover:before:opacity-100 font-bold text-sm text-muted-foreground">
+              <NavLink
+                to={"/products/champions-league"}
+                className="px-5 py-4 cursor-pointer relative flex items-center gap-1 group-hover:text-ring group before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-ring before:bottom-0 before:left-0 before:opacity-0 hover:before:opacity-100 font-bold text-sm text-muted-foreground"
+              >
                 Champions league{" "}
                 <ChevronDown className="group-hover:rotate-180 transition duration-300 opacity-0 w-0" />
-              </div>
+              </NavLink>
             </div>
           </nav>
         </div>

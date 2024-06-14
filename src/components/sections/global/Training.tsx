@@ -38,7 +38,7 @@ export default function Training() {
           <div className="w-1/2">
             <div className="grid border-b-2 border-gray-200 dark:border-gray-700 pb-2 mb-2 mx-4">
               <Link
-                to={"/"}
+                to={"/products/training-24-25"}
                 className="text-left cursor-pointer normal-case w-full h-full rounded-sm xl:text-lg text-base font-bold"
               >
                 Équipe masculine
@@ -49,7 +49,7 @@ export default function Training() {
           <div className="w-1/2">
             <div className="grid border-b-2 border-gray-200 dark:border-gray-700 pb-2 mb-2 mx-4">
               <Link
-                to={"/"}
+                to={"/products/training-24-25"}
                 className="text-left cursor-pointer normal-case w-full h-full rounded-sm xl:text-lg text-base font-bold"
               >
                 Équipe feminine
@@ -62,7 +62,7 @@ export default function Training() {
           <div className="w-1/2">
             <div className="grid border-b-2 border-gray-200 dark:border-gray-700 pb-2 mb-2 mx-4">
               <Link
-                to={"/"}
+                to={"/products/training-24-25"}
                 className="text-left cursor-pointer normal-case w-full h-full rounded-sm xl:text-lg text-base font-bold"
               >
                 Enfants
@@ -73,7 +73,7 @@ export default function Training() {
           <div className="w-1/2">
             <div className="grid border-b-2 border-gray-200 dark:border-gray-700 pb-2 mb-2 mx-4">
               <Link
-                to={"/"}
+                to={"/products/training-24-25"}
                 className="text-left cursor-pointer normal-case w-full h-full rounded-sm xl:text-lg text-base font-bold"
               >
                 Collections
@@ -88,8 +88,8 @@ export default function Training() {
             <h1 className="text-2xl md:text-4xl mb-7 font-bold text-card-foreground">
               Entrainement 24/25
             </h1>
-            <Button variant={"primary"} size={"lg"}>
-              Acheter
+            <Button variant={"primary"} size={"lg"} asChild>
+              <Link to={"/products/training-24-25"}>Acheter</Link>
             </Button>
           </div>
         </div>
@@ -104,7 +104,7 @@ function Categories({ categories }: { categories: string[] }) {
       {categories.map((category, i) => (
         <Link
           key={i}
-          to={"/"}
+          to={"/products/training-24-25"}
           className="transition-all hover:bg-[#8760f6]/20 hover:text-[#8760f6] border-none rounded-sm font-semibold text-start normal-case text-sm xl:text-base text-gray-400 dark:text-gray-600 px-4 py-2"
         >
           {category}

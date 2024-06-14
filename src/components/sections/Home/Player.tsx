@@ -24,7 +24,7 @@ export default function Player({ player }: { player: playerType }) {
         <p className="font-bold text-2xl text-center sm:text-start pb-1 text-[#000c]">
           #{number} {name}
         </p>
-        <Button variant={"primary"}>Shop</Button>
+        <Button variant={"primary"}>Acheter</Button>
       </div>
     </div>
   );

@@ -25,6 +25,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const payments = [pay1, pay2, pay3, pay4, pay5, pay6, pay7, pay8, pay9];
@@ -95,8 +96,9 @@ export default function Footer() {
             <Button
               variant={"secondary"}
               className="rounded-xl text-ring w-full"
+              asChild
             >
-              Incrire maintenant
+              <Link to={"/login"}>Incrire maintenant</Link>
             </Button>
           </div>
         </div>
@@ -164,8 +166,9 @@ export default function Footer() {
             <Button
               variant={"secondary"}
               className="rounded-xl text-ring w-full"
+              asChild
             >
-              Incrire maintenant
+              <Link to={"/login"}>Incrire maintenant</Link>
             </Button>
           </div>
         </div>

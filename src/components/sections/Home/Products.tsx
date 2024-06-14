@@ -1,6 +1,6 @@
 import datas from "@/data/products.json";
 import { productType } from "@/types/products";
-import Product from "./Product";
+import Product from "../global/Product";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 

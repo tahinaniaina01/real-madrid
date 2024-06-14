@@ -10,11 +10,13 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <Trending />
-      <ShopByPlayer />
-      <Category />
-      <Events />
+      <main>
+        <Hero />
+        <Trending />
+        <ShopByPlayer />
+        <Category />
+        <Events />
+      </main>
       <Footer />
     </>
   );

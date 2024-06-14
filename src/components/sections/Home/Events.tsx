@@ -17,7 +17,7 @@ export default function Events() {
         </div>
         <div className="w-full h-full py-8 px-6 flex justify-center items-center sm:p-16">
           <div className="grid sm:flex justify-items-center sm:justify-center items-center w-full mx-auto relative z-20">
-            <div className="w-full sm:px-0 sm:pb-0 max-w-3xl px-6 shadow-lg rounded-xl md:p-8 p-6 grid relative justify-items-start items-center md:items-start text-start backdrop-blur bg-card">
+            <div className="w-full max-w-3xl px-6 shadow-lg rounded-xl md:p-8 p-6 grid relative justify-items-start items-center md:items-start text-start backdrop-blur bg-card">
               <h1 className="text-2xl md:text-4xl font-bold mb-7">
                 Vainqueur de l'UCL
               </h1>
@@ -26,9 +26,9 @@ export default function Events() {
               </Button>
             </div>
           </div>
-          <div className="overflow-hidden sm:mb-0 -mb-10 order-first w-full max-w-fit sm:-me-16 translate-x-1/4">
+          <div className="overflow-hidden sm:mb-0 -mb-10 order-first w-full max-w-fit sm:-me-16 lg:translate-x-1/4">
             <img
-              className="rounded-lg sm:block hidden z-10 relative"
+              className="rounded-xl sm:block hidden z-10 relative"
               width="680"
               height="380"
               src={ldcSm}
@@ -47,7 +47,7 @@ export default function Events() {
         </div>
         <div className="w-full h-full py-8 px-6 flex justify-center items-center sm:p-16">
           <div className="grid sm:flex justify-items-center sm:justify-center items-center w-full mx-auto relative z-20">
-            <div className="w-full sm:px-0 sm:pb-0 max-w-3xl px-6 shadow-lg rounded-xl md:p-8 p-6 grid relative justify-items-start items-center md:items-start text-start backdrop-blur bg-card">
+            <div className="w-full max-w-3xl px-6 shadow-xl rounded-xl md:p-8 p-6 grid relative justify-items-start items-center md:items-start text-start backdrop-blur bg-card">
               <h1 className="text-2xl md:text-4xl font-bold mb-7">
                 Toni Kroos
               </h1>
@@ -56,9 +56,9 @@ export default function Events() {
               </Button>
             </div>
           </div>
-          <div className="overflow-hidden sm:mb-0 -mb-10 w-full max-w-fit sm:-me-16 -translate-x-[30%]">
+          <div className="overflow-hidden sm:mb-0 -mb-10 w-full max-w-fit sm:-me-16 lg:-translate-x-[30%] -translate-x-[20%]">
             <img
-              className="rounded sm:block hidden z-10 relative"
+              className="rounded-xl sm:block hidden z-10 relative"
               width="680"
               height="380"
               src={krossSm}
