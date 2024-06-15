@@ -3,9 +3,11 @@ import { Button } from "@/components/ui/button";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import datas from "@/data/products.json";
 import { useCarts } from "@/hooks/carts";
+import { useState } from "react";
 
 export default function CreateYourOwn() {
   const { addProductCart } = useCarts();
+  const [size, setSize] = useState(datas[0].size[0]);
 
   return (
     <div className="w-full flex flex-col justify-center items-center my-12">
@@ -34,7 +36,8 @@ export default function CreateYourOwn() {
                 </h3>
                 <ToggleGroup
                   type="single"
-                  defaultValue={datas[0].size[0]}
+                  defaultValue={size}
+                  onValueChange={(value) => setSize(value)}
                   variant="outline"
                   className="w-full flex flex-row sm:flex-wrap justify-start"
                 >
@@ -92,7 +95,7 @@ export default function CreateYourOwn() {
               <Button
                 variant={"primary"}
                 size={"xl"}
-                onClick={() => addProductCart(datas[0])}
+                onClick={() => addProductCart(datas[0], size)}
                 className="w-full py-3 px-6 rounded-xl"
               >
                 Ajouter au panier

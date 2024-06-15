@@ -18,11 +18,13 @@ import { Button } from "@/components/ui/button";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import products from "@/data/products.json";
 import { useCarts } from "@/hooks/carts";
+import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import NotFound from "./NotFound";
 
 export default function ProductDetails() {
   const { productId } = useParams();
+  const [Size, setSize] = useState<string>("");
   const { addProductCart } = useCarts();
   const product = products.find(
     (prod) => prod.id == parseInt(productId || "999999999999999")
@@ -30,7 +32,7 @@ export default function ProductDetails() {
   if (!product) return <NotFound />;
   const { title, price, size, image } = product;
 
-  console.log(product);
+  // setSize(size[0]);
 
   return (
     <>
@@ -45,7 +47,7 @@ export default function ProductDetails() {
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem>
-                    <BreadcrumbLink>
+                    <BreadcrumbLink asChild>
                       <Link to="/" className="text-ring">
                         Accueil
                       </Link>
@@ -73,10 +75,11 @@ export default function ProductDetails() {
                 <ToggleGroup
                   type="single"
                   defaultValue={size[0]}
+                  onValueChange={(value) => setSize(value)}
                   variant="outline"
                   className="w-full flex flex-row flex-wrap justify-start"
                 >
-                  {product?.size.map((element, i) => {
+                  {product.size.map((element, i) => {
                     return (
                       <ToggleGroupItem
                         key={i}
@@ -130,7 +133,7 @@ export default function ProductDetails() {
               <Button
                 variant={"primary"}
                 size={"xl"}
-                onClick={() => addProductCart(product)}
+                onClick={() => addProductCart(product, Size)}
                 className="w-full py-3 px-6 rounded-xl"
               >
                 Ajouter au panier

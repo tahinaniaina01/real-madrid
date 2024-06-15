@@ -3,18 +3,21 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { useCarts } from "@/hooks/carts";
 import { productType } from "@/types/products";
 import { ShoppingCart } from "lucide-react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Product({ product }: { product: productType }) {
   const { title, price, size, image, id } = product;
+  const [Size, setSize] = useState<string>(size[0]);
   const { addProductCart } = useCarts();
+  // console.log(id + ": " + Size);
 
   return (
     <div className="group cursor-pointer flex items-start flex-col gap-3 p-[10px] rounded-xl shadow-full-xl m-3">
       <div className="relative overflow-hidden">
         <Button
+          onClick={() => addProductCart(product, Size)}
           variant={"ghost"}
-          onClick={() => addProductCart(product)}
           className="absolute top-1 group-hover:right-1 -right-16 transition-all duration-300 z-30"
         >
           <ShoppingCart />{" "}
@@ -28,8 +31,11 @@ export default function Product({ product }: { product: productType }) {
         </Link>
         <ToggleGroup
           type="single"
-          defaultValue={size[0]}
+          defaultValue={Size}
           variant="outline"
+          onValueChange={(value) => {
+            setSize(value);
+          }}
           className="flex items-center justify-center w-full absolute transition-all gap-0 duration-300 bottom-0 translate-y-12 group-hover:translate-y-0"
         >
           {size.map((element: string, i: number) => {

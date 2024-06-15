@@ -63,8 +63,8 @@ export function SideBar() {
         ) : (
           <div className="mx-2 mt-3">
             <div className="flex flex-col overflow-y-auto gap-3 max-h-[100vh] h-full pb-[350px]">
-              {productsCarts.map((item) => {
-                return <CartItem item={item} key={item.id} />;
+              {productsCarts.map((item, index) => {
+                return <CartItem item={item} key={index} />;
               })}
             </div>
             <div className="absolute w-full py-9 px-7 flex flex-col gap-y-3 right-0 bottom-0 bg-white">
@@ -103,7 +103,7 @@ export function SideBar() {
                   <Link to={"#products"}>Continuer l'achat</Link>
                 </Button>
                 <Button variant={"primary"} className="py-7" asChild>
-                  <Link to="/checkout">Checkout</Link>
+                  <Link to="/checkout">Proceder au payment</Link>
                 </Button>
               </div>
             </div>

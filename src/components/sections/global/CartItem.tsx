@@ -5,7 +5,7 @@ import { cartType } from "@/types/carts";
 import { Link } from "react-router-dom";
 
 export default function CartItem({ item }: { item: cartType }) {
-  const { id, image, title, amount, price } = item;
+  const { id, image, title, amount, price, size } = item;
   const { deleteOneProductCart, incrementAmount, decrementAmount, setAmount } =
     useCarts();
 
@@ -25,7 +25,7 @@ export default function CartItem({ item }: { item: cartType }) {
             </Link>
             <div className="flex flex-col tracking-normal">
               <p className="text-sm">Quantité: {amount}</p>
-              <p className="text-sm">Size: XS</p>
+              <p className="text-sm">Size: {size}</p>
             </div>
             <h5 className="pt-3 mt-3 border-t">€ {price * amount}</h5>
           </div>
@@ -57,7 +57,10 @@ export default function CartItem({ item }: { item: cartType }) {
               +
             </Button>
           </div>
-          <Button variant={"primary"} onClick={() => deleteOneProductCart(id)}>
+          <Button
+            variant={"primary"}
+            onClick={() => deleteOneProductCart(id, size)}
+          >
             Delete
           </Button>
         </div>
