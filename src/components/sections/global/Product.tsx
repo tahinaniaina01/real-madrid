@@ -55,7 +55,7 @@ export default function Product({ product }: { product: productType }) {
       </div>
       <div className="flex flex-wrap justify-start h-[50px] w-[90%]">
         <Link
-          className="mx-3 inline-flex items-center text-start font-bold text-muted-forground line-clamp-2 group-hover:underline leading-6 tracking-tighter sm:text-lg"
+          className="mx-3 inline-flex items-center text-start font-bold text-muted-forground line-clamp-2 group-hover:underline leading-6 tracking-tighter text-md md:text-sm xl:text-lg"
           to={`/product/${id}`}
         >
           {title}

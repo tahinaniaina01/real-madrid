@@ -1,12 +1,13 @@
 import logo from "@/assets/logo-oficial-store.webp";
 import Menu from "@/components/ui/Menu";
 import { Input } from "@/components/ui/input";
-import { ArrowRight, ChevronDown, Search, UserRound, X } from "lucide-react";
+import { ArrowRight, ChevronDown, Search, UserRound } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Accessoires from "./Accessoires";
 import Fashion from "./Fashion";
 import Kits from "./Kits";
+import SearchBox from "./SearchBox";
 import ShopByPlayer from "./ShopByPlayer";
 import { SideBar } from "./SideBar";
 import Training from "./Training";
@@ -76,19 +77,7 @@ export default function Header() {
               </div>
             </Link>
           </div>
-          <div className="relative w-full lg:flex flex-1 md:grow-0 hidden">
-            <span className="flex-1 items-center justify-center w-full h-full">
-              <Search className="absolute left-2.5 top-2.5 h-6 w-6 text-muted-foreground" />
-            </span>
-            <Input
-              type="search"
-              placeholder="Recherche..."
-              className="input-focus bg-muted border-none h-[56px] lg:h-[48px] text-inherit px-16 py-2 appearance-none w-full transition duration-150 ease-in-out focus:outline-none font-bold placeholder:font-normal focus:border-deep-purple-700 focus:ring-deep-purple-700 focus:ring-2 rounded-xl"
-            />
-            <span className="x flex-1 items-center justify-center w-full h-full cursor-pointer hidden">
-              <X className="absolute right-2.5 top-2.5 h-6 w-6 text-input" />
-            </span>
-          </div>
+          <SearchBox />
           <div className="flex w-full h-full items-center justify-end gap-7 ml-4 lg:ml-8 lg:pr-16">
             <Link to="/login">
               <UserRound className="text-muted-foreground" />

@@ -20,7 +20,7 @@ export default function MensTeam() {
           return (
             <CarouselItem
               key={index}
-              className="pl-1 md:basis-1/2 lg:basis-1/4"
+              className="pl-1 mmd:basis-1/2 lg:basis-1/3 xl:basis-1/4"
             >
               <div className="p-1">
                 <Player player={player} />

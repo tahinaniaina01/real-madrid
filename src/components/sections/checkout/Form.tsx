@@ -5,7 +5,7 @@ import ShippingForm from "./ShippingForm";
 
 export default function Form() {
   return (
-    <div className="space-y-3 mt-12">
+    <div className="space-y-3 lg:mt-12 mt-24">
       <div className="relative w-full flex items-center justify-between mb-12">
         <Button
           variant={"secondary"}

@@ -1,4 +1,3 @@
-import logo from "@/assets/logo.webp";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { X } from "lucide-react";
@@ -10,7 +9,11 @@ export default function Login() {
       <header className="fixed w-[100vw] top-0 left-0">
         <div className="container flex justify-center py-5">
           <Link to="/" className="text-xl">
-            <img src={logo} className="w-12 h-12 rounded-full" alt="" />
+            <img
+              src="/favicon-48x48.png"
+              className="w-12 h-12 rounded-full"
+              alt=""
+            />
           </Link>
         </div>
       </header>
@@ -25,7 +28,7 @@ export default function Login() {
           <div className="relative w-full flex flex-1 md:grow-0">
             <Input
               type="email"
-              placeholder="votre emeil"
+              placeholder="votre email"
               className="input-focus bg-muted border-none h-[56px] lg:h-[48px] text-inherit pr-16 pl-3 py-2 appearance-none w-full transition duration-150 ease-in-out focus:outline-none font-bold placeholder:font-normal focus:border-deep-purple-700 focus:ring-deep-purple-700 focus:ring-2 rounded-xl"
             />
             <span className="x flex-1 items-center justify-center w-full h-full cursor-pointer hidden">

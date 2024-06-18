@@ -14,7 +14,7 @@ export default function CreateYourOwn() {
       <h1 className="font-primary lg:text-6xl xl:text-7xl text-4xl font-bold tracking-tight my-12 text-white text-center">
         Personnalisez votre maillot
       </h1>
-      <div className="w-full max-w-screen-xl">
+      <div className="w-full max-w-screen-xl px-8">
         <div className="relative grid grid-cols-1 items-start gap-4 min-h-auto mx-auto md:grid-cols-2 md:rounded-xl md:bg-background">
           <div className="relative px-0 pb-0 box-border flex flex-col col-span-1 z-0 md:py-6 md:ps-6 md:h-full md:pe-4">
             <img src={img} alt="" />
@@ -39,7 +39,7 @@ export default function CreateYourOwn() {
                   defaultValue={size}
                   onValueChange={(value) => setSize(value)}
                   variant="outline"
-                  className="w-full flex flex-row sm:flex-wrap justify-start"
+                  className="w-full flex flex-row flex-wrap justify-start"
                 >
                   {datas[0].size.map((element, i) => {
                     return (

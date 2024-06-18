@@ -3,6 +3,7 @@ import ldcBg from "@/assets/FWB_BACKGROUND__1_.webp";
 import krossSm from "@/assets/FWB_OVER.webp";
 import ldcSm from "@/assets/FWB_OVER__1_.webp";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export default function Events() {
   return (
@@ -21,8 +22,8 @@ export default function Events() {
               <h1 className="text-2xl md:text-4xl font-bold mb-7">
                 Vainqueur de l'UCL
               </h1>
-              <Button variant={"primary"} size={"lg"}>
-                Acheter
+              <Button variant={"primary"} size={"lg"} asChild>
+                <Link to={"/products/champions-league"}>Acheter</Link>
               </Button>
             </div>
           </div>

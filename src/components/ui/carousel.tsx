@@ -208,7 +208,8 @@ const CarouselPrevious = React.forwardRef<
         orientation === "horizontal"
           ? "left-7 top-1/2 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
-        className
+        className,
+        "hover:bg-muted"
       )}
       disabled={!canScrollPrev}
       onClick={scrollPrev}

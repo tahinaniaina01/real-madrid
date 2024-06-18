@@ -74,7 +74,13 @@
     @apply bg-background text-foreground;
     font-family: RMNeue, sans-serif;
   }
-  .input-focus:focus ~ .x {
-    @apply flex;
-  }
+}
+.input-focus:focus ~ .x {
+  @apply flex;
+}
+/* .search-box {
+  @apply hidden;
+} */
+.input-focus:focus ~ .search-box {
+  @apply flex;
 }
